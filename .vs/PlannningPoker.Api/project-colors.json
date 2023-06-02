@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "18b8d93c-5104-4d3d-b9c9-af1b585f6a7d": {
+      "ProjectGuid": "18b8d93c-5104-4d3d-b9c9-af1b585f6a7d",
+      "DisplayName": "PlanningPoker.Entities",
+      "ColorIndex": 0
+    },
+    "a48b920f-ea74-442a-a575-7107e9600271": {
+      "ProjectGuid": "a48b920f-ea74-442a-a575-7107e9600271",
+      "DisplayName": "PlanningPoker.Repository",
+      "ColorIndex": 1
+    },
+    "a4330be0-5984-4d2c-ae0d-931dad2b55ee": {
+      "ProjectGuid": "a4330be0-5984-4d2c-ae0d-931dad2b55ee",
+      "DisplayName": "PlannningPoker.Api",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 3
+}

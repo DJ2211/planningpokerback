@@ -1,0 +1,14 @@
+C:\Users\pca156\source\repos\PlannningPoker.Api\PlanningPoker.Entities\bin\Debug\net6.0\PlanningPoker.Entities.deps.json
+C:\Users\pca156\source\repos\PlannningPoker.Api\PlanningPoker.Entities\bin\Debug\net6.0\PlanningPoker.Entities.runtimeconfig.json
+C:\Users\pca156\source\repos\PlannningPoker.Api\PlanningPoker.Entities\bin\Debug\net6.0\PlanningPoker.Entities.dll
+C:\Users\pca156\source\repos\PlannningPoker.Api\PlanningPoker.Entities\bin\Debug\net6.0\ref\PlanningPoker.Entities.dll
+C:\Users\pca156\source\repos\PlannningPoker.Api\PlanningPoker.Entities\bin\Debug\net6.0\PlanningPoker.Entities.pdb
+C:\Users\pca156\source\repos\PlannningPoker.Api\PlanningPoker.Entities\obj\Debug\net6.0\PlanningPoker.Entities.csproj.AssemblyReference.cache
+C:\Users\pca156\source\repos\PlannningPoker.Api\PlanningPoker.Entities\obj\Debug\net6.0\PlanningPoker.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pca156\source\repos\PlannningPoker.Api\PlanningPoker.Entities\obj\Debug\net6.0\PlanningPoker.Entities.AssemblyInfoInputs.cache
+C:\Users\pca156\source\repos\PlannningPoker.Api\PlanningPoker.Entities\obj\Debug\net6.0\PlanningPoker.Entities.AssemblyInfo.cs
+C:\Users\pca156\source\repos\PlannningPoker.Api\PlanningPoker.Entities\obj\Debug\net6.0\PlanningPoker.Entities.csproj.CoreCompileInputs.cache
+C:\Users\pca156\source\repos\PlannningPoker.Api\PlanningPoker.Entities\obj\Debug\net6.0\PlanningPoker.Entities.dll
+C:\Users\pca156\source\repos\PlannningPoker.Api\PlanningPoker.Entities\obj\Debug\net6.0\ref\PlanningPoker.Entities.dll
+C:\Users\pca156\source\repos\PlannningPoker.Api\PlanningPoker.Entities\obj\Debug\net6.0\PlanningPoker.Entities.pdb
+C:\Users\pca156\source\repos\PlannningPoker.Api\PlanningPoker.Entities\obj\Debug\net6.0\PlanningPoker.Entities.genruntimeconfig.cache

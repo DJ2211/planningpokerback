@@ -1,0 +1,17 @@
+C:\Users\pca156\source\repos\PlannningPoker.Api\PlanningPoker.Repository\bin\Debug\net6.0\PlanningPoker.Repository.deps.json
+C:\Users\pca156\source\repos\PlannningPoker.Api\PlanningPoker.Repository\bin\Debug\net6.0\PlanningPoker.Repository.runtimeconfig.json
+C:\Users\pca156\source\repos\PlannningPoker.Api\PlanningPoker.Repository\bin\Debug\net6.0\PlanningPoker.Repository.dll
+C:\Users\pca156\source\repos\PlannningPoker.Api\PlanningPoker.Repository\bin\Debug\net6.0\ref\PlanningPoker.Repository.dll
+C:\Users\pca156\source\repos\PlannningPoker.Api\PlanningPoker.Repository\bin\Debug\net6.0\PlanningPoker.Repository.pdb
+C:\Users\pca156\source\repos\PlannningPoker.Api\PlanningPoker.Repository\obj\Debug\net6.0\PlanningPoker.Repository.csproj.AssemblyReference.cache
+C:\Users\pca156\source\repos\PlannningPoker.Api\PlanningPoker.Repository\obj\Debug\net6.0\PlanningPoker.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pca156\source\repos\PlannningPoker.Api\PlanningPoker.Repository\obj\Debug\net6.0\PlanningPoker.Repository.AssemblyInfoInputs.cache
+C:\Users\pca156\source\repos\PlannningPoker.Api\PlanningPoker.Repository\obj\Debug\net6.0\PlanningPoker.Repository.AssemblyInfo.cs
+C:\Users\pca156\source\repos\PlannningPoker.Api\PlanningPoker.Repository\obj\Debug\net6.0\PlanningPoker.Repository.csproj.CoreCompileInputs.cache
+C:\Users\pca156\source\repos\PlannningPoker.Api\PlanningPoker.Repository\obj\Debug\net6.0\PlanningPoker.Repository.dll
+C:\Users\pca156\source\repos\PlannningPoker.Api\PlanningPoker.Repository\obj\Debug\net6.0\ref\PlanningPoker.Repository.dll
+C:\Users\pca156\source\repos\PlannningPoker.Api\PlanningPoker.Repository\obj\Debug\net6.0\PlanningPoker.Repository.pdb
+C:\Users\pca156\source\repos\PlannningPoker.Api\PlanningPoker.Repository\obj\Debug\net6.0\PlanningPoker.Repository.genruntimeconfig.cache
+C:\Users\pca156\source\repos\PlannningPoker.Api\PlanningPoker.Repository\obj\Debug\net6.0\PlanningPoker.Repository.csproj.CopyComplete
+C:\Users\pca156\source\repos\PlannningPoker.Api\PlanningPoker.Repository\bin\Debug\net6.0\PlanningPoker.Entities.dll
+C:\Users\pca156\source\repos\PlannningPoker.Api\PlanningPoker.Repository\bin\Debug\net6.0\PlanningPoker.Entities.pdb
