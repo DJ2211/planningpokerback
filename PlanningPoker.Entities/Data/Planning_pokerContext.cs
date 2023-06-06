@@ -51,6 +51,8 @@ namespace PlanningPoker.Entities.Data
 
                 entity.Property(e => e.IsCardSelected).HasColumnName("isCardSelected");
 
+                entity.Property(e => e.IsGameCreator).HasColumnName("isGameCreator");
+
                 entity.Property(e => e.Name).HasMaxLength(255);
 
                 entity.Property(e => e.SelectedCard).HasColumnName("Selected_card");

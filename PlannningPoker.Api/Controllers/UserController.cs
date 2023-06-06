@@ -34,7 +34,7 @@ namespace PlannningPoker.Api.Controllers
         }
 
         [HttpPost("AddUser")]
-        public  async Task<OkObjectResult> AddUser(User user)
+        public async Task<OkObjectResult> AddUser(User user)
         {
 
             _userRepository.AddUser(user);
@@ -46,6 +46,19 @@ namespace PlannningPoker.Api.Controllers
             return Ok(freshUser);
         }
 
+        [HttpPost("AddCreator")]
+        public async Task<OkObjectResult> AddCreator(User user)
+        {
+            _userRepository.AddUser(user);
+            var freshUser = _userRepository.GetUser();
+
+            await _hubContext.Clients.All.SendAsync("ReceiveData", user);
+
+            return Ok(freshUser);
+        }
+
+
+
         [HttpPatch("UpdateUser")]
         public async Task UpdateUser(User user)
         {
@@ -54,9 +67,9 @@ namespace PlannningPoker.Api.Controllers
             await _hubContext.Clients.All.SendAsync("UpdateUser", user);
 
             //return Ok();
-            
+
         }
-        [HttpPost("UpdatePlayers")]
+        [HttpGet("UpdatePlayers")]
         public async Task<IActionResult> UpdatePlayers([FromBody] List<User> updatedPlayers)
         {
             updatedPlayers = _context.Users.ToList();
@@ -93,18 +106,19 @@ namespace PlannningPoker.Api.Controllers
             return user;
         }
 
+        [HttpGet("GetGameCreator/{id}")]
+        public User GetPlayer(int id)
+        {
+            var player = _context.Users.FirstOrDefault(p => p.Userid == id);
 
-
-
-        ////methods of hubs
-        //[HttpGet("PerformAction")]
-        //public IActionResult PerformAction()
-        //{
          
-        //    // Send a message to all clients
-        //    _hubContext.Clients.All.SendAsync("ReceiveMessage", "Action performed!");
 
-        //    return Ok();
-        //}
+            return player;
+        }
+
+
+
+
+      
     }
 }

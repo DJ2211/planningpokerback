@@ -14,7 +14,8 @@ namespace PlanningPoker.Entities.Models
         public string Name { get; set; } = null!;
         public string GameToken { get; set; } = null!;
         public int? SelectedCard { get; set; }
-        public int? IsCardSelected { get; set; }
+        public bool? IsCardSelected { get; set; }
+        public bool? IsGameCreator { get; set; }
 
         public virtual ICollection<Game> Games { get; set; }
     }

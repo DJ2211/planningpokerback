@@ -19,6 +19,9 @@ namespace PlanningPoker.Repository.Interface
 
         public void UpdateUser(User user);
 
+        public List<User> UpdateUsersOnNewGame(List<User> users);
+
+
 
     }
 }

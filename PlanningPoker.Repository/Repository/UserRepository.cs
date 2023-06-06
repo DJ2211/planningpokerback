@@ -27,10 +27,15 @@ namespace PlanningPoker.Repository.Repository
         public void UpdateUser(User user)
         {
             var user1 = _context.Users.FirstOrDefault(userDB => userDB.Userid == user.Userid);
-            user1.SelectedCard = user.SelectedCard;
-            user1.IsCardSelected = user.IsCardSelected;
-            _context.Update(user1);
-            _context.SaveChanges();
+            if(user1 != null)
+            {
+                user1.Name = user.Name;
+                user1.SelectedCard = user.SelectedCard;
+                user1.IsCardSelected = user.IsCardSelected;
+                _context.Update(user1);
+                _context.SaveChanges();
+            }
+            
         }
 
         public IEnumerable<User> GetPlayers()
@@ -43,6 +48,7 @@ namespace PlanningPoker.Repository.Repository
         public User GetUser()
         {
             var user = _context.Users.ToList().LastOrDefault();
+            
             return user;
         }
 
@@ -62,6 +68,21 @@ namespace PlanningPoker.Repository.Repository
             }
 
             return new string(token);
+        }
+
+        //to update all the users cards on new game 
+        public List<User> UpdateUsersOnNewGame(List<User> users)
+        {
+            foreach (var user in users)
+            {
+                user.SelectedCard = null;
+                user.IsCardSelected = null;
+                _context.Update(user);
+                _context.SaveChanges();
+            }
+
+            var updatedUsers = _context.Users.ToList();
+            return updatedUsers;
         }
     }
 }
