@@ -23,6 +23,7 @@ namespace PlanningPoker.Repository.Repository
             
             _context.Add(user);
             _context.SaveChanges();
+
         }
         public void UpdateUser(User user)
         {
@@ -36,6 +37,12 @@ namespace PlanningPoker.Repository.Repository
                 _context.SaveChanges();
             }
             
+        }
+
+        public User GetUpdatedUser(User user)
+        {
+            var user1 = _context.Users.FirstOrDefault(userDB => userDB.Userid == user.Userid);
+            return user1;
         }
 
         public IEnumerable<User> GetPlayers()
@@ -81,7 +88,7 @@ namespace PlanningPoker.Repository.Repository
                 _context.SaveChanges();
             }
 
-            var updatedUsers = _context.Users.ToList();
+            var updatedUsers = users;
             return updatedUsers;
         }
     }

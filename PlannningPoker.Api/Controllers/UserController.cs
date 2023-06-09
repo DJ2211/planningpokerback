@@ -26,6 +26,19 @@ namespace PlannningPoker.Api.Controllers
             _userRepository = userRepository;
         }
 
+
+        [HttpGet("CheckToken")]
+        public async Task<OkObjectResult> CheckToken(string token)
+        {
+            // Check if the token exists in the database
+            bool tokenExists = _context.Users.Any(user => user.GameToken == token);
+
+            
+                return Ok(tokenExists); // Token exists in the database
+            
+            
+        }
+
         [HttpGet("GetToken")]
         public string Token()
         {
@@ -41,7 +54,7 @@ namespace PlannningPoker.Api.Controllers
             var freshUser = _userRepository.GetUser();
 
 
-            await _hubContext.Clients.All.SendAsync("ReceiveData", user);
+            //await _hubContext.Clients.All.SendAsync("ReceiveData", user);
 
             return Ok(freshUser);
         }
@@ -52,7 +65,7 @@ namespace PlannningPoker.Api.Controllers
             _userRepository.AddUser(user);
             var freshUser = _userRepository.GetUser();
 
-            await _hubContext.Clients.All.SendAsync("ReceiveData", user);
+            //await _hubContext.Clients.All.SendAsync("ReceiveData", user);
 
             return Ok(freshUser);
         }
@@ -60,13 +73,12 @@ namespace PlannningPoker.Api.Controllers
 
 
         [HttpPatch("UpdateUser")]
-        public async Task UpdateUser(User user)
+        public async Task<OkObjectResult> UpdateUser(User user)
         {
-            _userRepository.UpdateUser(user);
+             _userRepository.UpdateUser(user);
+            var freshUser =  _userRepository.GetUpdatedUser(user);
 
-            await _hubContext.Clients.All.SendAsync("UpdateUser", user);
-
-            //return Ok();
+            return Ok(freshUser);
 
         }
         [HttpGet("UpdatePlayers")]
@@ -90,10 +102,12 @@ namespace PlannningPoker.Api.Controllers
         }
 
         [HttpGet("GetPlayers")]
-        public IEnumerable<User> GetPlayers()
+        public IEnumerable<User> GetPlayers(string gameToken)
+         
         {
             Console.WriteLine("called get players");
-            var users = _userRepository.GetPlayers();
+            //var users = _userRepository.GetPlayers();
+            var users = _context.Users.Where(user => user.GameToken == gameToken).ToList();
             return users;
 
 
